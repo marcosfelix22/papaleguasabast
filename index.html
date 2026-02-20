@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Auto Socorro Papa-Léguas</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0056b3">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0056b3; /* Azul principal */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+        }
+
+        .login-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            width: 100%;
+            max-width: 350px;
+            text-align: center;
+            color: #333;
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            background-color: #f0f0f0;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #0056b3;
+            border: 4px solid #0056b3;
+        }
+
+        h2 { margin-bottom: 1.5rem; color: #0056b3; }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #ffcc00; /* Amarelo Papa-Léguas para destaque */
+            border: none;
+            border-radius: 8px;
+            color: #333;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+
+        button:hover { background-color: #e6b800; }
+    </style>
+</head>
+<body>
+
+    <div class="login-card">
+        <div class="logo">LOGO<br>Papa-Léguas</div>
+        <h2>Acesse sua conta</h2>
+        <form>
+            <input type="text" placeholder="Usuário ou E-mail" required>
+            <input type="password" placeholder="Senha" required>
+            <button type="submit">ENTRAR</button>
+        </form>
+    </div>
+
+    <script>
+        // Registra o Service Worker para transformar em PWA
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+        }
+    </script>
+</body>
+</html>
