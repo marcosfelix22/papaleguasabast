@@ -1,16 +1,17 @@
 {
   "name": "Auto Socorro Papa-Léguas",
   "short_name": "Papa-Léguas",
-  "start_url": "index.html",
+  "description": "Serviço de Guincho e Socorro Mecânico",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#0056b3",
   "theme_color": "#0056b3",
   "icons": [
     {
-      "src": "./icon.png",
+      "src": "icon.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
-
 }
